@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Voyself',
       home: NavbarScreen(),
+      theme: ThemeData(fontFamily: 'Poppins'),
     );
   }
 }
