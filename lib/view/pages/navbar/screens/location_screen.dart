@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:voyself_web/constants/colors.dart';
+import 'package:voyself_web/model/model.dart';
 import 'package:voyself_web/view/widgets/location_tile.dart';
 import 'package:voyself_web/view/widgets/topbar.dart';
 
@@ -14,14 +15,23 @@ class LocationScreen extends StatelessWidget {
       backgroundColor: AppColors.blackLight,
       body: Column(
         children: [
-          TopBarWidget(),
-          SizedBox(
-            height: h * 3,
-          ),
-          LocationTile(
-              countryName: "Pakstian",
-              image: "assets/images/tajMehal.jpg",
-              locationName: "darbar")
+          TopBarWidget(title: "Location"),
+          Expanded(
+            child: ListView.builder(
+              itemCount: locationTileDetails.length,
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
+                    SizedBox(height: h * 2),
+                    LocationCustomTile(
+                        countryName: locationTileDetails[index].countryName,
+                        image: locationTileDetails[index].image,
+                        locationName: locationTileDetails[index].locationName),
+                  ],
+                );
+              },
+            ),
+          )
         ],
       ),
     );

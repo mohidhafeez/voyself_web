@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:voyself_web/constants/colors.dart';
 
 class TopBarWidget extends StatelessWidget {
-  const TopBarWidget({super.key});
+  final String title;
+  const TopBarWidget({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class TopBarWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Dashboard",
+                title,
                 style: TextStyle(fontSize: h * 3),
               ),
               Row(

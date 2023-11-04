@@ -14,7 +14,9 @@ class DashboardScreen extends StatelessWidget {
       backgroundColor: AppColors.blackLight,
       body: Column(
         children: [
-          TopBarWidget(),
+          TopBarWidget(
+            title: "Dashboard",
+          ),
           SizedBox(
             height: h * 10,
           ),
@@ -25,7 +27,7 @@ class DashboardScreen extends StatelessWidget {
                 itemCount: tileDetails.length,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10),
                     child: Container(
                         width: w * 15,
                         decoration: BoxDecoration(
@@ -36,12 +38,13 @@ class DashboardScreen extends StatelessWidget {
                           children: [
                             Text(
                               tileDetails[index].text,
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: h * 2.5),
                             ),
                             Text(
                               tileDetails[index].value.toString(),
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.w600),
+                                  fontSize: h * 2.8,
+                                  fontWeight: FontWeight.w600),
                             ),
                           ],
                         )),

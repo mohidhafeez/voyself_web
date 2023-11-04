@@ -10,7 +10,6 @@ class DesktopNavBar extends StatelessWidget {
     "Dashboard",
     "Location",
     "Listing",
-    "Approval",
     "Bookings",
     "Notifications"
   ];
