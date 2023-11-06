@@ -29,24 +29,24 @@ class TopBarWidget extends StatelessWidget {
                     child: TextFormField(
                       cursorColor: Colors.black,
                       decoration: InputDecoration(
-                          suffixIcon: Icon(
+                          suffixIcon: const Icon(
                             Icons.search,
                             color: Colors.black,
                           ),
-                          contentPadding:
-                              EdgeInsets.symmetric(vertical: 3, horizontal: 5),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 3, horizontal: 5),
                           hintText: "Search Here....",
                           filled: true,
                           fillColor: AppColors.primaryColor,
-                          border: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(
+                          border: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Colors.black))),
                     ),
                   ),
                   SizedBox(
                     width: w * 2,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: NetworkImage(
                         "https://images.pexels.com/photos/16690873/pexels-photo-16690873/free-photo-of-model-in-a-white-blouse-and-a-black-mini-skirt.jpeg"),
                   ),

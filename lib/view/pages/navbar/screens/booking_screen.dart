@@ -17,7 +17,7 @@ class BookingScreen extends StatelessWidget {
       backgroundColor: AppColors.blackLight,
       body: Column(
         children: [
-          TopBarWidget(title: "Bookings"),
+          const TopBarWidget(title: "Bookings"),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: w * 1, vertical: h * 2),
             child: Table(
@@ -210,8 +210,10 @@ class BookingScreen extends StatelessWidget {
                                       border: Border.all(
                                         width: 2,
                                         color: bookingDetails[index].status
-                                            ? Color.fromARGB(255, 0, 113, 4)
-                                            : Color.fromARGB(255, 255, 124, 16),
+                                            ? const Color.fromARGB(
+                                                255, 0, 113, 4)
+                                            : const Color.fromARGB(
+                                                255, 255, 124, 16),
                                       ),
                                       borderRadius: BorderRadius.circular(15),
                                       color: bookingDetails[index].status
@@ -226,8 +228,9 @@ class BookingScreen extends StatelessWidget {
                                           : "Pending",
                                       style: TextStyle(
                                           color: bookingDetails[index].status
-                                              ? Color.fromARGB(255, 0, 113, 4)
-                                              : Color.fromARGB(
+                                              ? const Color.fromARGB(
+                                                  255, 0, 113, 4)
+                                              : const Color.fromARGB(
                                                   255, 255, 124, 16),
                                           fontSize: h * 2.5,
                                           fontWeight: FontWeight.w600),

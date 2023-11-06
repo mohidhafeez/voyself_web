@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:voyself_web/constants/colors.dart';
 import 'package:voyself_web/model/model.dart';
+import 'package:voyself_web/view/widgets/custom_dialoguebox.dart';
 import 'package:voyself_web/view/widgets/listing_tile.dart';
 import 'package:voyself_web/view/widgets/topbar.dart';
 
@@ -24,11 +26,22 @@ class ListingScreen extends StatelessWidget {
                   children: [
                     SizedBox(height: h * 2),
                     ListingTile(
-                        image: listingDetails[index].image,
-                        locationName: listingDetails[index].locationName,
-                        locationCity: listingDetails[index].locationCity,
-                        rating: listingDetails[index].rating,
-                        price: listingDetails[index].price)
+                      image: listingDetails[index].image,
+                      locationName: listingDetails[index].locationName,
+                      locationCity: listingDetails[index].locationCity,
+                      rating: listingDetails[index].rating,
+                      price: listingDetails[index].min,
+                      onTap: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) =>
+                                Dialog.fullscreen(
+                                  child: CustomDialogueBox(
+                                    data: listingDetails[index],
+                                  ),
+                                ));
+                      },
+                    )
                   ],
                 );
               },

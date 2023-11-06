@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class custom_button extends StatelessWidget {
+class RounderRectangleButton extends StatelessWidget {
   final Color buttonColor;
   VoidCallback onTap;
   final String text;
-  custom_button({
+  RounderRectangleButton({
     super.key,
     required this.text,
     required this.onTap,

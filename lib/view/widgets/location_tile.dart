@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:voyself_web/constants/colors.dart';
-import 'package:voyself_web/view/widgets/custom_button.dart';
+import 'package:voyself_web/view/widgets/rounder_button.dart';
 
 class LocationCustomTile extends StatelessWidget {
   String image;
@@ -48,7 +47,7 @@ class LocationCustomTile extends StatelessWidget {
                 SizedBox(
                   width: w * 5,
                 ),
-                custom_button(
+                RounderRectangleButton(
                     h: h,
                     w: w,
                     buttonColor: AppColors.primaryColor,
@@ -57,7 +56,7 @@ class LocationCustomTile extends StatelessWidget {
                 SizedBox(
                   width: w * 1,
                 ),
-                custom_button(
+                RounderRectangleButton(
                     h: h,
                     w: w,
                     buttonColor: Colors.red,

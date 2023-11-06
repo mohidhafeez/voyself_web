@@ -6,7 +6,7 @@ import 'package:voyself_web/controller/navbar_controller.dart';
 class DesktopNavBar extends StatelessWidget {
   DesktopNavBar({super.key});
 
-  List<String> NavBarTabs = [
+  List<String> navBarTabs = [
     "Dashboard",
     "Location",
     "Listing",
@@ -40,11 +40,11 @@ class DesktopNavBar extends StatelessWidget {
                   Expanded(
                     child: Container(
                       child: ListView.builder(
-                          itemCount: NavBarTabs.length,
+                          itemCount: navBarTabs.length,
                           itemBuilder: (context, index) {
                             return Obx(() => ListTile(
                                   title: Text(
-                                    NavBarTabs[index],
+                                    navBarTabs[index],
                                     style: TextStyle(
                                         fontSize: 18,
                                         color: navBarController.index.value ==

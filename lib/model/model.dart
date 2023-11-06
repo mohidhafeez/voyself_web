@@ -59,14 +59,22 @@ class Listing {
   final String locationName;
   final String locationCity;
   final double rating;
-  final int price;
+  final int min;
+  final int max;
+  final List<String> features;
+  final List<String> facilites;
+  final String discription;
 
   Listing({
     required this.image,
     required this.locationName,
     required this.locationCity,
     required this.rating,
-    required this.price,
+    required this.min,
+    required this.max,
+    required this.features,
+    required this.facilites,
+    required this.discription,
   });
 }
 
@@ -76,43 +84,141 @@ List<Listing> listingDetails = [
       locationName: "Burj khalifa",
       locationCity: "Dubai",
       rating: 5.0,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/effileTower.jpeg",
       locationName: "Effie Tower",
       locationCity: "Paris",
       rating: 4.5,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/phuket.jpeg",
       locationName: "Patong Beach",
       locationCity: "Phuket",
       rating: 3.5,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/rome.jpeg",
       locationName: "Colossuem",
       locationCity: "Rome",
       rating: 3.0,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/turkey.jpeg",
       locationName: "Goreme National Park",
       locationCity: "Cappadocia",
       rating: 4.5,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/whiteBuildings.jpeg",
       locationName: "White Buildings",
       locationCity: "Santorini",
       rating: 4.0,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
   Listing(
       image: "assets/images/tajMehal.jpg",
       locationName: "Taj Mehal",
       locationCity: "Agra",
       rating: 3.4,
-      price: 200),
+      min: 200,
+      max: 1000,
+      discription:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      facilites: [
+        "parking",
+        "Swimming",
+        "Room Service",
+      ],
+      features: [
+        "only on weekend",
+        "Music Enthusiast",
+        "Smoking",
+        "Forigen Languague"
+      ]),
 ];
 
 class Booking {
@@ -229,4 +335,42 @@ List<Booking> bookingDetails = [
       payment: "Credit Card",
       status: false,
       date: DateTime(2023, 11, 04)),
+];
+
+class UsersData {
+  final int days;
+  final int activeUser;
+  final int nonActiveUser;
+
+  UsersData(
+      {required this.activeUser,
+      required this.days,
+      required this.nonActiveUser});
+}
+
+List<UsersData> userDetails = [
+  UsersData(activeUser: 4, days: 1, nonActiveUser: 2),
+  UsersData(activeUser: 3, days: 2, nonActiveUser: 8),
+  UsersData(activeUser: 2, days: 3, nonActiveUser: 2),
+  UsersData(activeUser: 5, days: 4, nonActiveUser: 1),
+  UsersData(activeUser: 6, days: 5, nonActiveUser: 9),
+  UsersData(activeUser: 7, days: 6, nonActiveUser: 5),
+  UsersData(activeUser: 9, days: 7, nonActiveUser: 8),
+];
+
+class Places {
+  final int days;
+  final int currentPlaces;
+
+  Places({required this.days, required this.currentPlaces});
+}
+
+List<Places> placesDetails = [
+  Places(days: 1, currentPlaces: listingDetails.length),
+  Places(days: 2, currentPlaces: listingDetails.length),
+  Places(days: 3, currentPlaces: listingDetails.length),
+  Places(days: 4, currentPlaces: listingDetails.length),
+  Places(days: 5, currentPlaces: listingDetails.length),
+  Places(days: 6, currentPlaces: listingDetails.length),
+  Places(days: 7, currentPlaces: listingDetails.length),
 ];
